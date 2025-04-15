@@ -1,4 +1,5 @@
 package dedicnost;
+import java.util.Random;
 
 public class Auto {
 
@@ -17,7 +18,7 @@ public class Auto {
         this.barva = barva;
     }
 
-    public void vypisInsfo(){
+    public void vypisInfo(){
         System.out.println("Počet sedadel: " +pocetSedadel+ " Počet dveří: " +pocetDveri+ " Počet náhradních kol: " +pocetNahradnichKol+ " Počet koní: " +pocetKoni+ " Cena: " +cena+ " Barva: " +barva);
     }
 
@@ -27,8 +28,35 @@ public class Auto {
     }
 
     public void vytvorSPZ(){
+        String znaky = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        StringBuilder sb = new StringBuilder();
+        Random random = new Random();
+
+        int delkaJedna = 3;
+        for (int i = 0; i < delkaJedna; i++) {
+            int y = random.nextInt(znaky.length());
+            sb.append(znaky.charAt(y));
+        }
+        String castJedna = sb.toString();
+
+        int delkaDva = 4;
+        for (int i = 0; i < delkaDva; i++) {
+            int y = random.nextInt(znaky.length());
+            sb.append(znaky.charAt(y));
+        }
+        String castDva = sb.toString();
+
+        String vysledek = castJedna + " " + castDva;
+
 
     }
+
+
+
+
+
+
+
 
 
 

@@ -9,13 +9,13 @@ public class Main {
         Audi awwdi = new Audi(80,100000000, "oradžoví");
         Fabia fawwia = new Fabia(4,1000, "UwU pink");
 
-        fewwawi.vypisInsfo();
+        fewwawi.vypisInfo();
         fewwawi.jizdaStart();
 
-        awwdi.vypisInsfo();
+        awwdi.vypisInfo();
         awwdi.jizdaStart();
 
-        fawwia.vypisInsfo();
+        fawwia.vypisInfo();
         fawwia.jizdaStart();
 
         System.out.println(awwdi.getBarva());
