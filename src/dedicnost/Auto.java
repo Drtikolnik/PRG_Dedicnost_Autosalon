@@ -19,7 +19,7 @@ public class Auto {
     }
 
     public void vypisInfo(){
-        System.out.println("Počet sedadel: " +pocetSedadel+ " Počet dveří: " +pocetDveri+ " Počet náhradních kol: " +pocetNahradnichKol+ " Počet koní: " +pocetKoni+ " Cena: " +cena+ " Barva: " +barva);
+        System.out.println("Počet sedadel: " +pocetSedadel+ " Počet dveří: " +pocetDveri+ " Počet náhradních kol: " +pocetNahradnichKol+ " Počet koní: " +pocetKoni+ " Cena: " +cena+ " Barva: " +barva+ " SPZ: " +spz);
     }
 
 
@@ -27,8 +27,8 @@ public class Auto {
         System.out.println("Auto začalo svou jízdu");
     }
 
-    public void vytvorSPZ(){
-        String znaky = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    public String vytvorSPZ(){
+        String znaky = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         StringBuilder sb = new StringBuilder();
         Random random = new Random();
 
@@ -38,6 +38,7 @@ public class Auto {
             sb.append(znaky.charAt(y));
         }
         String castJedna = sb.toString();
+        sb.setLength(0);
 
         int delkaDva = 4;
         for (int i = 0; i < delkaDva; i++) {
@@ -46,8 +47,8 @@ public class Auto {
         }
         String castDva = sb.toString();
 
-        String vysledek = castJedna + " " + castDva;
-
+        spz = castJedna + " " + castDva;
+        return spz;
 
     }
 

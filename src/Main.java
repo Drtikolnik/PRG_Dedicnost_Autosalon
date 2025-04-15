@@ -9,6 +9,12 @@ public class Main {
         Audi awwdi = new Audi(80,100000000, "oradžoví");
         Fabia fawwia = new Fabia(4,1000, "UwU pink");
 
+        fewwawi.vytvorSPZ();
+        awwdi.vytvorSPZ();
+        fawwia.vytvorSPZ();
+
+
+
         fewwawi.vypisInfo();
         fewwawi.jizdaStart();
 
