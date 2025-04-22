@@ -11,7 +11,6 @@ public class Auto {
     private String barva;
     private String spz;
 
-
     public Auto(int pocetKoni, int cena, String barva){
         this.pocetKoni = pocetKoni;
         this.cena = cena;
@@ -51,20 +50,6 @@ public class Auto {
         return spz;
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

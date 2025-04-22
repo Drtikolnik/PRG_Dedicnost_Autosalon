@@ -6,4 +6,9 @@ public class Ferrari extends Auto{
         super(pocetKoni, cena, barva);
     }
 
+    public void jizdaStart(){
+        System.out.println("Fewwawi začalo svou jízdu");
+        System.out.println("Fewwawi je pro " + super.getPocetSedadel() + " osob");
+    }
+
 }

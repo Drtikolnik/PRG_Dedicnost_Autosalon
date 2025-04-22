@@ -6,4 +6,9 @@ public class Fabia extends Auto {
         super(pocetKoni, cena, barva);
     }
 
+    public void jizdaStart(){
+        System.out.println("Fawwia začala svou jízdu");
+        System.out.println("Fawwia je pro " + super.getPocetSedadel() + " osob");
+    }
+
 }

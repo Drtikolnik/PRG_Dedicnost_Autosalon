@@ -6,6 +6,10 @@ public class Audi extends Auto{
         super(pocetKoni, cena, barva);
     }
 
+    public void jizdaStart(){
+        System.out.println("Awwdi začalo svou jízdu");
+        System.out.println("Awwdi je pro " + super.getPocetSedadel() + " osob");
+    }
 
 
 
